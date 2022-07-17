@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section-todo {
+  text-align: center;
+  background: #c9bd97;
+  padding: 40px 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin: 0 0 10px;
+  font-size: 40px;
+  padding: 10px 0px;
+}
+
+input[type="text"] {
+  max-width: 320px;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}
+form {
+  margin: 10px 0;
+}
+ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+li {
+  padding: 10px 50px 10px 15px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto 1px;
+  position: relative;
+  text-align: left;
+}
+
+li .delete {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: auto;
+  background: red;
+  top: 50%;
+  margin-top: -10px;
+  right: 15px;
+  text-align: center;
+}
+li .delete:before {
+  content: "x";
+}
+.add {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.add label {
+  display: block;
+  margin: 0 0 10px;
+}
+.filtered {
+  display: none;
+}
